@@ -10,13 +10,39 @@ npm install --save-dev eslint-plugin-no-pl-pr-tailwind
 
 ## Usage
 
+### For ESLint v9+ (Flat Config, ESM)
+
+Import the plugin in your `eslint.config.js`:
+
+```js
+// eslint.config.js (ESM)
+import noPlPrTailwind from "eslint-plugin-no-pl-pr-tailwind";
+// or, if you prefer named import:
+// import * as noPlPrTailwind from "eslint-plugin-no-pl-pr-tailwind";
+
+export default [
+  {
+    plugins: {
+      "no-pl-pr-tailwind": noPlPrTailwind,
+    },
+    rules: {
+      "no-pl-pr-tailwind/no-pl-pr-tailwind": "warn",
+    },
+  },
+];
+```
+
+> **Note:** Both default and named imports are supported for ESM usage.
+
+### For ESLint v8 and below (`.eslintrc` config)
+
 Add `no-pl-pr-tailwind` to your ESLint configuration:
 
 ```json
 {
   "plugins": ["no-pl-pr-tailwind"],
   "rules": {
-    "no-pl-pr-tailwind/no-pl-pr-tailwind": "error"
+    "no-pl-pr-tailwind/no-pl-pr-tailwind": "warn"
   }
 }
 ```
