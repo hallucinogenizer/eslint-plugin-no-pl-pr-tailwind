@@ -1,0 +1,26 @@
+{
+  "name": "eslint-plugin-no-pl-pr-tailwind",
+  "version": "1.0.0",
+  "description": "ESLint rule to disallow Tailwind's pl- and pr- classes in favor of ps- and pe- for RTL support.",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "tailwind",
+    "rtl",
+    "eslint-rule"
+  ],
+  "author": "Muhammad Rohan Hussain",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hallucinogenizer/eslint-plugin-no-pl-pr-tailwind.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hallucinogenizer/eslint-plugin-no-pl-pr-tailwind/issues"
+  },
+  "homepage": "https://github.com/hallucinogenizer/eslint-plugin-no-pl-pr-tailwind#readme",
+  "peerDependencies": {
+    "eslint": ">=7.0.0"
+  }
+}
